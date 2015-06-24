@@ -9,12 +9,12 @@
     </div>
     <div class="col-lg-8 col-med-8 col-sm-8">
       <ul class="nav nav-tabs nav-pills">
-        <li class="pill-triconf {{if isAllEventsHidden 'disabled'}}"><a href="#" {{action 'filterAll'}}>All</a></li>
-        <li class="pill-music {{if isCultureEventsHidden 'disabled'}}"><a href="#" {{action 'filterCulture'}}>Culture/Arts/Music</a></li>
-        <li class="pill-activism {{if isCommunityEventsHidden 'disabled'}}"><a href="#"{{action 'filterCommunity'}}>Community/Issues/Sustainability</a></li>
-        <li class="pill-tech {{if isTechnologyEventsHidden 'disabled'}}"><a href="#" {{action 'filterTechnology'}}>Tech</a></li>
-        <li class="pill-art-and-design {{if isDesignEventsHidden 'disabled'}}"><a href="#"{{action 'filterDesign'}}>Design/Communication</a></li>
-        <li class="pill-entrepreneurship {{if isEntrepreneurshipEventsHidden 'disabled'}}" {{action 'filterEntrepreneurship'}}><a href="#">Entrepreneurship</a></li>
+        <li class="pill-triconf {{if isAllEventsHidden 'disabled'}}"><a href="#" {{action 'filter' 'AllEvents'}}>All</a></li>
+        <li class="pill-music {{if isCultureEventsHidden 'disabled'}}"><a href="#" {{action 'filter' 'CultureEvents'}}>Culture/Arts/Music</a></li>
+        <li class="pill-activism {{if isCommunityEventsHidden 'disabled'}}"><a href="#" {{action 'filter' 'CommunityEvents'}}>Community/Issues/Sustainability</a></li>
+        <li class="pill-tech {{if isTechnologyEventsHidden 'disabled'}}"><a href="#" {{action 'filter' 'TechEvents'}}>Tech</a></li>
+        <li class="pill-art-and-design {{if isDesignEventsHidden 'disabled'}}"><a href="#" {{action 'filter' 'DesignEvents'}}>Design/Communication</a></li>
+        <li class="pill-entrepreneurship {{if isEntrepreneurshipEventsHidden 'disabled'}}" {{action 'filter' 'EntrepreneurshipEvents'}}><a href="#">Entrepreneurship</a></li>
       </ul>
     </div>
   </div>

@@ -12,23 +12,8 @@ export default Ember.Controller.extend({
 		return true;
 	},
 	actions : {
-		filterAll : function(){
-			this.set('isAllEventsHidden', !this.get('isAllEventsHidden'));
-		},
-		filterCulture : function(){
-			this.set('isCultureEventsHidden', !this.get('isCultureEventsHidden'));
-		},
-		filterCommunity : function(){
-			this.set('isCommunityEventsHidden', !this.get('isCommunityEventsHidden'));
-		},
-		filterDesign : function(){
-			this.set('isDesignEventsHidden', !this.get('isDesignEventsHidden'));
-		},
-		filterEntrepreneurship : function() {
-			this.set('isEntrepreneurshipEventsHidden', !this.get('isEntrepreneurshipEventsHidden'));
-		},
-		filterTechnology : function() {
-			this.set('isTechnologyEventsHidden', !this.get('isTechnologyEventsHidden'));
+		filter: function(category) {
+		  this.set(`is${category}Hidden`, !this.get(`is${category}Hidden`));
 		}
 	}
 });
