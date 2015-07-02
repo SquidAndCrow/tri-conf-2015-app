@@ -14,7 +14,7 @@ Points: {{session.user.points}}
   <ul>
     <li>{{#link-to 'events'}}<i class="fa fa-flag icon"></i>Event List{{/link-to}}</li>
     <li>{{#link-to 'local-eats'}}<i class="fa fa-cutlery icon"></i>Local Eats{{/link-to}}</li>
-    <li>{{#link-to 'leaderboard'}}<i class="fa fa-users icon"></i>Leader Boards{{/link-to}}</li>
+    <li>{{#link-to 'leaderboard'}}<i class="fa fa-users icon"></i>Leaderboards{{/link-to}}</li>
     <li>{{#link-to 'achievements'}}<i class="fa fa-trophy icon"></i>Achievements{{/link-to}}</li>
   </ul>
 </nav>
@@ -24,7 +24,7 @@ Points: {{session.user.points}}
   <ul>
     <li><a {{action 'menuLoad' 'events'}}><i class="fa fa-flag icon"></i> Event List</a></li>
     <li><a {{action 'menuLoad' 'local-eats'}}><i class="fa fa-cutlery icon"></i> Local Eats</a></li>
-    <li><a {{action 'menuLoad' 'leaderboard'}}><i class="fa fa-users icon"></i> Leader Boards</a></li>
+    <li><a {{action 'menuLoad' 'leaderboard'}}><i class="fa fa-users icon"></i> Leaderboards</a></li>
     <li><a {{action 'menuLoad' 'achievements'}}><i class="fa fa-trophy icon"></i> Achievements</a></li>
   </ul>
   {{#if isExpanded}}
