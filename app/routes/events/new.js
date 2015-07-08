@@ -13,7 +13,7 @@ export default Ember.Route.extend({
     return this.store.createRecord('workout-event');
   },
 
-  afterModel: function(workoutEvent, transition) {
+  afterModel: function(/*workoutEvent, transition*/) {
     this.set('workouts', this.store.find('workout'));
   },
 
@@ -24,18 +24,18 @@ export default Ember.Route.extend({
     if (day) {
       var momentDay = moment(day);
       var date = momentDay.format('MM-DD-YYYY');
-      var hour = momentDay.format('hh')
+      var hour = momentDay.format('hh');
       var minute = momentDay.format('mm');
       var timeOfDay = momentDay.format('A');
 
-      set(model, 'datetime', moment(day).toString())
+      set(model, 'datetime', moment(day).toString());
       controller.set('date', date);
       controller.set('hour', hour);
       controller.set('minute', minute);
       controller.set('timeOfDay', timeOfDay);
     }
     else {
-      set(model, 'datetime', moment().toString())
+      set(model, 'datetime', moment().toString());
     }
 
     controller.set('workouts', this.get('workouts'));
